@@ -26,16 +26,16 @@
 
             $_SESSION["File_Post"] = $fileNewMore;
 
-            $router->addRoute('/SquirrelBlog/', '/services/index.php');
-            $router->addRoute('/SquirrelBlog/posts', '/services/index.php');
-            $router->addRoute('/SquirrelBlog/posts/', '/services/index.php');
-            $router->addRoute('/SquirrelBlog/posts/search', '/services/index.php');
-            $router->addRoute('/SquirrelBlog/post/create/'.$currentDate.$fileNewMore.'/', '/services/index.php');
-            $router->addRoute('/SquirrelBlog/login', '/services/login.php');
+            $router->addRoute('/ZealFlow.Blogger/', '/services/index.php');
+            $router->addRoute('/ZealFlow.Blogger/posts', '/services/index.php');
+            $router->addRoute('/ZealFlow.Blogger/posts/', '/services/index.php');
+            $router->addRoute('/ZealFlow.Blogger/posts/search', '/services/index.php');
+            $router->addRoute('/ZealFlow.Blogger/post/create/'.$currentDate.$fileNewMore.'/', '/services/index.php');
+            $router->addRoute('/ZealFlow.Blogger/login', '/services/login.php');
 
             //pagination posts page
             for ($i = 1; $i <= ceil($row/2); $i++)
-                $router->addRoute('/SquirrelBlog/posts/page/'.$i.'/', '/services/index.php');
+                $router->addRoute('/ZealFlow.Blogger/posts/page/'.$i.'/', '/services/index.php');
 
             $sql1 = "SELECT content, datepost FROM db_squirellblog.posts";
             $result = $conn->query($sql1);
@@ -43,7 +43,7 @@
                 $contentFile = filter_var($row["content"], FILTER_SANITIZE_NUMBER_INT);
                 $date = new DateTime($row["datepost"]);
                 $datepost = $date->format('Ymd');
-                $router->addRoute('/SquirrelBlog/post/edit/'.$datepost.$contentFile.'', '/services/index.php');
+                $router->addRoute('/ZealFlow.Blogger/post/edit/'.$datepost.$contentFile.'', '/services/index.php');
             }
         }
     }

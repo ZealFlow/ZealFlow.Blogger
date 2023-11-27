@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Squirrel Blog</title>
+    <title>Zeal Blogger</title>
+
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <base href="http://localhost/">
-    <link href="/SquirrelBlog/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <script src="/SquirrelBlog/vendor/tinymce/js/tinymce/tinymce.min.js"></script>
+    <link href="/ZealFlow.Blogger/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="/ZealFlow.Blogger/vendor/tinymce/js/tinymce/tinymce.min.js"></script>
     <link rel="stylesheet" href="/SquirrelBlog/vendor/tinymce/js/tinymce/skins/content/default/content.min.css">
-    <link href="/SquirrelBlog/public/static/css/sb-admin-2.css" rel="stylesheet">
-    <link href="/SquirrelBlog/public/static/css/stylePost.css" rel="stylesheet">
-    <link href="/SquirrelBlog/public/static/css/stylePosts.css" rel="stylesheet">
+    <link href="/ZealFlow.Blogger/public/static/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/ZealFlow.Blogger/public/static/css/stylePost.css" rel="stylesheet">
+    <link href="/ZealFlow.Blogger/public/static/css/stylePosts.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
@@ -21,7 +22,7 @@
     <button class="activePopup btnpopupTest1">Click Pop 1</button>
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/SquirrelBlog/posts/">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/ZealFlow.Blogger/posts/">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -39,7 +40,7 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" action="/SquirrelBlog/posts/search" method="get">
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" action="/ZealFlow.Blogger/posts/search" method="get">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" name="q">
                             <div class="input-group-append">
