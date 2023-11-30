@@ -48,6 +48,15 @@
         }
     }
     
-    $routes = new Routes();
-    $routes->initRoutes();
+    // $routes = new Routes();
+    // $routes->initRoutes();
+
+    include_once './Routing.php';
+
+    $router = new Routing('/studio');
+    
+    $router->add('/services/index.php', '/posts');
+    $router->add('/services/index.php', '/posts/page/${i}', function (){
+        return [1,2,3,4,5];
+    });
 ?>
