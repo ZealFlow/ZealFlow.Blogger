@@ -53,10 +53,22 @@
 
     include_once './Routing.php';
 
-    $router = new Routing('/studio');
+    /**
+    * File root project
+    */
+    $router = new Routing('/services/index.php');
     
-    $router->add('/services/index.php', '/posts');
-    $router->add('/services/index.php', '/posts/page/${i}', function (){
+    /**
+    * Account: User
+    * Site: Client
+    * Mode: Studio
+    */
+    $router->add('/studio', '/posts');
+    $router->add('/studio', '/posts/search');
+    $router->add('/account', '/sign-in');
+    $router->add('/admin', '/login');
+    $router->add('/studio', '/post/create/${unique_id}');
+    $router->add('/studio', '/posts/page/${i}', function (){
         return [1,2,3,4,5];
     });
 ?>

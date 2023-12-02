@@ -11,6 +11,11 @@
 
             session_start();
 
+            if ($_SESSION['User'] == null) {
+                header('Location: http://zealflow.io/account/sign-in');
+                exit();
+            }
+
             $folder = './uploads/posts/';
             $files = scandir($folder, SCANDIR_SORT_DESCENDING);
             $files = array_diff($files, ['.', '..']);
@@ -31,11 +36,11 @@
 
             if (isset($_GET['id'])) {
                 $bo_Post->deletePost($_GET['id']);
-                header('Location: http://localhost/SquirrelBlog/posts/');
-                return;
+                header('Location: http://zealflow.io/studio/posts');
+                exit();
             }
             
-            include_once $this->root_URL.'\views\contents\posts.php';
+            include_once $this->root_URL.'\views\pages\client\postsPage.php';
         }
     }
 ?>
